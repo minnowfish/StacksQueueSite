@@ -30,10 +30,11 @@ function QueueGame(){
         thisPoints = questions[rand].points;
         
     }
+    return score;
 }
 
 function StackGame(){
-
+    return score;
 }
 
 function IsHighscore(){
@@ -53,10 +54,12 @@ function main(){
 
     //Get email, name and newline from user (requires html/css to code)
     //Get user's choice (event listen for button click)
-    QUEUEBUTTON.addEventListener('click', function() {
+    document.getElementById('queueBtn').addEventListener('click', function() {
+        console.log("Queue Function Ran");
         score = QueueGame();
     });
-    STACKBUTTON.addEventListener('click', function(){
+    document.getElementById('stackBtn').addEventListener('click', function(){
+        console.log("Stack Function Ran");
         score = StackGame();
     });
 
@@ -76,3 +79,5 @@ function main(){
     });
     */
 }
+
+main();
