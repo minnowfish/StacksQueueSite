@@ -30,23 +30,35 @@ function QueueGame(){
         thisPoints = questions[rand].points;
         
     }
+    IsHighscore();
     return score;
 }
 
 function StackGame(){
+    IsHighscore();
     return score;
 }
 
 function IsHighscore(){
     //This module is useless without file handling so it will randomly return true or false
-    //What it would've actually been:
 
     let rand = Math.floor(Math.random()*2);
-    if (rand == 0){
-        return false;
-    } else{
-        return true;
+    if (rand == 1){
+    //unfortunately, as node.js modules does not work on github pages, this won't work 
+        let highscore = IsHighscore()
+        if (highscore = true){
+            console.log("Congrats! You have achieved a new highscore!") //change html when html is finished
+        }
     }
+     /* file handling, does not work on github pages so no highscore system :( 
+
+        var fs = require('fs');
+        const NewLine = email+'\t'+name+'\t'+score+'\n'
+        fs.appendFile(ScoreFile , NewLine , function(err){
+            if (err) return 1;
+            console.log("Score appended successfully")
+        });
+*/
 }
 
 function main(){
@@ -62,22 +74,6 @@ function main(){
         console.log("Stack Function Ran");
         score = StackGame();
     });
-
-    //unfortunately, as node.js modules does not work on github pages, this won't work 
-    let highscore = IsHighscore(email, score)
-    if (highscore = true){
-        console.log("Congrats! You have achieved a new highscore!") //change html when html is finished
-    }
-
-    /* file handling, does not work on github pages so no highscore system :( 
-
-    var fs = require('fs');
-    const NewLine = email+'\t'+name+'\t'+score+'\n'
-    fs.appendFile(ScoreFile , NewLine , function(err){
-        if (err) return 1;
-        console.log("Score appended successfully")
-    });
-    */
 }
 
 main();
