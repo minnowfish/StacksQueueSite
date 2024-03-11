@@ -1,0 +1,6 @@
+### VisualStudioCode ###
+.vscode*
+!.vscode/launch.json
+
+### OTHER FILES ####
+test.js
