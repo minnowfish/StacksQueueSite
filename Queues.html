@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Queues Questions</title>
@@ -25,6 +26,18 @@
     	    padding: 20px;
   	}
 
+      table {
+        width: 100%;
+        margin-bottom: 10px;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 8px;
+        border: 1px solid #000000;
+        color: #000000;
+        background-color: #00000001;
+        text-align: center;
+    }
   		
   	.form-group {
   		margin-bottom: 15px;
@@ -42,7 +55,7 @@
 		text-align: center;
   	}
   		
-  	input[type="text"]::placeholder {					{
+  	input[type="text"]::placeholder{					
     		color: transparent;
     		display: inline-block;
 		text-align: center;
@@ -55,7 +68,7 @@
     		color: #000000;
     		cursor: pointer;
     		font-family: "Times New Roman";
-    		width: 200px;
+    		width: 100%;
 	}
 	
 	.contact_table {
@@ -66,6 +79,7 @@
 		text-align: center;	
 	}
     </style>
+
 </head>
 <body>
     <div class="title">
@@ -73,29 +87,67 @@
     </div>
     <br>
     <div>
-        <h2 style="text-align: center; margin-top: 20px;">"Insert Question"</h2>
+        <h2 id = "htmlquestion" style="text-align: center; margin-top: 20px;">"Insert Question"</h2>
     </div>
 	<div class="container">
+        <table>
+
+            <tr>
+                <td id = "10">-</td>
+            </tr>
+            <tr>
+                <td id = "9">-</td>
+            </tr>
+            <tr>
+                <td id = "8">-</td>
+            </tr>
+            <tr>
+                <td id = "7">-</td>
+            </tr>
+            <tr>
+                <td id = "6">-</td>
+            </tr>
+            <tr>
+                <td id = "5">-</td>
+            </tr>
+            <tr>
+                <td id = "4">-</td>
+            </tr>
+            <tr>
+                <td id = "3">-</td>
+            </tr>
+            <tr>
+                <td id = "2">-</td>
+            </tr>
+            <tr>
+                <td id = "1">-</td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <br>
+        <h3> Your Answer</h2>
     <div class="form-group">
       <input type="text" id="index_1" name="index_1" placeholder="Enter your answer"> <br>
       <input type="text" id="index_2" name="index_2" placeholder="Enter your answer"> <br>
-      <input type="text" id="index_1" name="index_1" placeholder="Enter your answer"> <br>
-      <input type="text" id="index_2" name="index_2" placeholder="Enter your answer"> <br>
-      <input type="text" id="index_1" name="index_1" placeholder="Enter your answer"> <br>
-      <input type="text" id="index_2" name="index_2" placeholder="Enter your answer"> <br>
-      <input type="text" id="index_1" name="index_1" placeholder="Enter your answer"> <br>
-      <input type="text" id="index_2" name="index_2" placeholder="Enter your answer"> <br>
-      <input type="text" id="index_1" name="index_1" placeholder="Enter your answer"> <br>
-      <input type="text" id="index_2" name="index_2" placeholder="Enter your answer"> 
+      <input type="text" id="index_3" name="index_3" placeholder="Enter your answer"> <br>
+      <input type="text" id="index_4" name="index_4" placeholder="Enter your answer"> <br>
+      <input type="text" id="index_5" name="index_5" placeholder="Enter your answer"> <br>
+      <input type="text" id="index_6" name="index_6" placeholder="Enter your answer"> <br>
+      <input type="text" id="index_7" name="index_7" placeholder="Enter your answer"> <br>
+      <input type="text" id="index_8" name="index_8" placeholder="Enter your answer"> <br>
+      <input type="text" id="index_9" name="index_9" placeholder="Enter your answer"> <br>
+      <input type="text" id="index_10" name="index_10" placeholder="Enter your answer"> 
     </div>
     <br><br>
     <div class="submit-btn">
-      <input type="submit" value="submit">
+      <input id = "submit" type="submit" value="submit">
     </div>
   </form>
 </div>
-<p style="text-align:center; color:#521978">Note: If the answer is an error, input "ERROR" in the lowest block.</p>
+<p id = "textmessage" style="text-align:center; color:#521978">Note: If the answer is an error, input "ERROR" in the lowest block.</p>
     <br>
-  <script src="app.js"></script>
+
 </body>
+<script src="queue.js"></script>
 </html>
