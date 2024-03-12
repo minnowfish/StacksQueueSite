@@ -89,6 +89,8 @@ function checkAnswer(error, answer){
 }
 
     if (error){
+        console.log(answer)
+        console.log(userAnswer)
         if (userAnswer[0] == "ERROR"){
             score += thisPoints;
             document.getElementById("textmessage").innerText = "correct!";
