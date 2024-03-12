@@ -52,7 +52,7 @@ function QueueGame(){
                     error = true;
                 } else{
                     endPointer++;
-                    answer.push(operations[0].slice(1));
+                    answer.push(operations[i].slice(1));
                 }
             } else {
                 if (endPointer == 0){
@@ -84,6 +84,8 @@ function checkAnswer(error, answer){
         }
         userAnswer.push(userInput);
         i--;
+        console.log(answer)
+        console.log(userAnswer)
 }
 
     if (error){
