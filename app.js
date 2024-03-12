@@ -158,12 +158,10 @@ function IsHighscore(){
     let rand = Math.floor(Math.random()*2);
     if (rand == 1){
     //unfortunately, as node.js modules does not work on github pages, this won't work 
-        let highscore = IsHighscore()
-        if (highscore = true){
-            console.log("Congrats! You have achieved a new highscore!") //change html when html is finished
+        console.log("Congrats! You have achieved a new highscore!") //change html when html is finished
         }
     }
-     /* file handling, does not work on github pages so no highscore system :( 
+     /*append score
 
         var fs = require('fs');
         const NewLine = email+'\t'+name+'\t'+score+'\n'
@@ -172,7 +170,7 @@ function IsHighscore(){
             console.log("Score appended successfully")
         });
 */
-}
+
 
 function main(){
     let score;
